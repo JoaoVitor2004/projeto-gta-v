@@ -1,13 +1,55 @@
-@media (max-width: 713px) {
+@media (max-width: 750px) {
     .cabecalho {
-        justify-content: center;
+        justify-content: space-between;
         gap: 40px;
+        padding: 20px 0 20px 20px;
     }
 
-    .cabecalho .menu {
-        flex-wrap: wrap;
+    .cabecalho nav {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        z-index: 2;
+    }
+
+    .cabecalho nav .menu {
+        display: block;
+        position: relative;
+        right: 20px;
+    }
+
+    .cabecalho nav ul {
+        display: none;
         justify-content: center;
         gap: 20px;
+    }
+
+    .cabecalho nav label {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cabecalho nav input:checked ~ ul {
+        display: block;
+        padding: 40px;
+        background-color: black;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .cabecalho nav input:checked ~ ul li a {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+        color: white;
+        padding: 10px 30px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .cabecalho nav input:checked ~ ul li a:hover {
+        background-color: white;
+        color: black;
+        border-radius: 25px;
     }
 
     .home {
@@ -50,19 +92,23 @@
     }
 }
 
-@media (max-width: 340px) {
-    .cartao img {
-        width: 100%;
-    }
-
+@media (max-width: 410px) {
     .cabecalho .logo {
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
-    .cabecalho .logo :nth-child(1) {
-        width: 30px;
+    .cartao {
+        padding: 60px 30px
+    }
+
+    #selecionar .lista-de-plataformas1 li img {
+        width: 100px;
+    }
+
+    #selecionar .lista-de-plataformas1 li img.pc {
+        width: 40px;
     }
 
     hr {
