@@ -1,10 +1,25 @@
 body {
     color: white;
-    font-family: 'Chalet',Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Chalet', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: tomato;
+    background-position: center center;
+    border-radius: 25px;
 }
 
 hr {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .menu {
@@ -47,16 +62,16 @@ hr {
     transition: 0.2s ease-in-out;
 }
 
-nav input:checked ~ label .menu .hamburguer {
+nav input:checked~label .menu .hamburguer {
     transform: rotate(45deg);
 }
 
-nav input:checked ~ label .menu .hamburguer::before {
+nav input:checked~label .menu .hamburguer::before {
     transform: rotate(90deg);
     bottom: 0;
 }
 
-nav input:checked ~ label .menu .hamburguer::after {
+nav input:checked~label .menu .hamburguer::after {
     transform: rotate(90deg);
     top: 0;
 }
@@ -90,7 +105,7 @@ input {
 }
 
 .cabecalho ul li a:hover {
-   border-bottom: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 .home {

@@ -29,7 +29,7 @@
         justify-content: flex-end;
     }
 
-    .cabecalho nav input:checked ~ ul {
+    .cabecalho nav input:checked~ul {
         display: block;
         padding: 40px;
         background-color: black;
@@ -37,7 +37,7 @@
         text-align: center;
     }
 
-    .cabecalho nav input:checked ~ ul li a {
+    .cabecalho nav input:checked~ul li a {
         display: block;
         margin-bottom: 30px;
         text-align: center;
@@ -46,7 +46,7 @@
         transition: 0.2s ease-in-out;
     }
 
-    .cabecalho nav input:checked ~ ul li a:hover {
+    .cabecalho nav input:checked~ul li a:hover {
         background-color: white;
         color: black;
         border-radius: 25px;
