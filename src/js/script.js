@@ -1,9 +1,7 @@
-var plataformas = document.querySelector('ul.lista-de-plataformas1')
-
+"use strict";
+const plataformas = document.querySelector('#lista-plataformas');
+const btnSelecionar = document.querySelector('#selecionar');
 function selecionar() {
-    plataformas.style.display = 'block'
+    plataformas === null || plataformas === void 0 ? void 0 : plataformas.classList.toggle('hide');
 }
-
-function sair() {
-    plataformas.style.display = 'none'
-}
+btnSelecionar === null || btnSelecionar === void 0 ? void 0 : btnSelecionar.addEventListener('click', () => selecionar());

@@ -239,9 +239,16 @@ input {
     font-weight: bold;
 }
 
-#selecionar .lista-de-plataformas1 {
-    display: none;
+#selecionar ul.lista-de-plataformas1 {
+    display: block;
+    transition: 0.2s ease-in-out;
+    pointer-events: all;
     flex-direction: column;
+}
+
+#selecionar ul.hide {
+    display: none;
+    pointer-events: none;
 }
 
 #selecionar .lista-de-plataformas1 li:nth-child(1) {
